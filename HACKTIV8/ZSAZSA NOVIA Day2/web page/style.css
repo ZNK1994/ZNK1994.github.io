@@ -1,0 +1,35 @@
+* {
+	margin: 0px;
+	color: black;
+}
+
+#article-list {
+
+}
+ 
+body {
+	margin: 0;
+    padding: 0;
+    background-color:#FFEC83;
+}
+
+h1{
+  font-weight: 800;
+  color: gray;
+}
+p{
+  color: orange;
+}
+#website-title{
+  padding: 10px;
+}
+ul.menu li {
+  display: inline:
+  background-color:yellow;
+}
+button{
+  padding: 10px;
+}
+button:hover{
+  background-color:#FFEC83;
+}
