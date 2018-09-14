@@ -1,0 +1,30 @@
+pseudocode 1:
+STORE "kecepatan" with 20 km/h
+STORE "penumpang" with value 0 BETWEEN 4
+
+IF penumpang EQUAL 4, 
+  DO kecepatan MINUS 7 km/jam
+
+IF penumpang GREATER THEN 2,
+  DO kecepatan MINUS 5 km/jam
+
+IF penumpang LESS THEN 2, 
+  DO kecepatan MINUS 2 km/jam
+
+DISPLAY kecepatan
+
+
+javascript:
+
+var kecBecak = 20;
+var x = 4;
+
+if (x == 4){
+  kecBecak-= 7
+}else if ( x < 3){
+  kecBecak-=5
+}else {
+  kecBecak-=2
+}
+
+console.log(kecBecak)
