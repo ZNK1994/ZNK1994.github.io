@@ -1,0 +1,87 @@
+Pertama
+-------------
+
+ var deret = 5;
+ var flag = 5;
+ while(flag > 0) { // Loop akan terus berjalan selama nilai deret masih di atas 0
+   deret*=5; // Menambahkan nilai variable jumlah dengan angka deret
+   flag--; // Mengubah nilai deret dengan mengurangi 1
+   console.log('Jumlah saat ini: ' + deret)
+ }
+ console.log(deret)
+
+--------------
+var deret=5;
+var flag=1;
+while (flag<=5){
+  deret*=5;
+  console.log('Pangkat ke-'+flag+':'+deret);
+  flag++;
+}
+
+console.log('Hasil pangkat terakhir: '+deret);
+---------------
+
+Kedua
+---------------
+
+var deret = 5;
+for(var flag=0; flag<5; flag++) {
+  deret*=5;
+  console.log('Jumlah saat ini: ' + deret);
+}
+
+console.log("Jumlah terakhir: " + deret);
+
+---------------
+
+Ketiga
+---------------
+
+ for(var deret = 0; deret < 100; deret += 3) {
+   console.log('Iterasi dengan Increment counter 2: ' + deret);
+ }
+
+ console.log('-------------------------------');
+ bawah bukan kerjaan
+ for(var deret = 15; deret > 0; deret -= 3) {
+   console.log('Iterasi dengan Decrement counter : ' + deret);
+ }
+----------------
+
+Keempat
+----------------
+
+
+for(var deret = 0; deret < 100; deret ++) {
+  if(deret%2==0){
+    console.log(deret+' Genap');
+  }else{
+    console.log(deret+' Ganjil');
+  }
+  
+}
+----------------
+Kelima
+----------------
+
+for(var i = 0; i < 10; i ++) {
+  if(i==7){
+    break;
+  }else{
+    console.log(i);
+  } 
+}
+
+-----------------
+Keenam
+
+-----------------
+
+for(var i = 0; i < 10; i ++) {
+  if(i==2 || i==8){
+    continue;
+  }else{
+    console.log(i);
+  } 
+}
