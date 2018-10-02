@@ -1,0 +1,31 @@
+function targetTerdekat(arr) {
+  var xo = 0;                                   //var untuk menghitung jarak
+  var firstTarget ="";                          //var untuk perbandingan
+  for(var i = 0; i < arr.length; i++){          //perulangan untuk array
+    if (firstTarget === "x" && arr[i] === "o"){ //kondisi jika first target bernilai x dan array bernilai o
+      return xo;                                //xo direturn
+    }
+    if (firstTarget === "o" && arr[i] === "x"){ //kondisi jika first target bernilai o dan array bernilai x
+      return xo;                                //xo direturn
+    } 
+    if (firstTarget === arr[i]){                //kondisi jika first target bernilai sama dengan array
+      xo = 0;                                   //xo bernilai 0, hitung jarak dimulai
+    }
+    if (arr[i] === "x" || arr[i] === "o"){      //kondisi jika first target bernilai x atau o
+      firstTarget = arr[i];                     //first target sama dengan array, kondisi dimulai dari sini
+    }                                      
+    if (firstTarget !== "") {                   //kondisi jika first target tidak sama dengan kosong alias bersisi spasi
+      xo++;                                     //xo nilai bertambah
+    }  
+  }
+  return 0;
+}
+
+console.log(targetTerdekat([" ", " ", "o", " ", " ", "x", " ", "x"])); //3
+console.log(targetTerdekat(["o", " ", " ", " ", "x", "x", "x"])); //4
+console.log(targetTerdekat(["x", " ", " ", " ", "x", "x", "o", " "])) //1
+console.log(targetTerdekat([" ", " ", "o", " "])) //0
+console.log(targetTerdekat([" ", "o", " ", "x", "x", " ", " ", "x"])) //2
+
+
+
