@@ -1,0 +1,117 @@
+// Soal 1. Mengurutkan
+// function ulul(num1, num2){ //membuat function dengan nama ulul dan memiliki 2 variable
+//     var itteration=[]; // membuat array kosong
+//     for( var i = num1; i>=num2; i-- ) { //membuat perulangan yang mencetak nilai dari num1 sampai num 2
+//       itteration.push(i); // di-'push' sehingga berbentuk array
+//     }
+//   return itteration; // return var itteration setelah di push
+// }
+// console.log(ulul(16, 4)); //mencetak function ulul dengan nilai variable yang telah ditentukan
+
+
+
+// Soal 2. Ganjil Genap
+// function ulul(num1, num2){ //membuat function dengan nama ulul dan memiliki 2 variable
+//   var ganjilGenap = [] //membuat array kosong
+//   for (var i = num1; i<=num2; i++){ //membuat perulangan yang mencetak nilai dari num1 sampai num 2
+//     var j //var j adalah var untuk hasil kondisi if
+//     if(i%2==0){ //kondisi untuk bilangan genap
+//       j= i+' = Genap';
+//     }else{ //kondisi untuk bilangan genap
+//       j= i+' = Ganjil'; 
+//     }
+//     ganjilGenap.push(j); //di-'push' sehingga berbentuk array
+//   }
+//   return ganjilGenap; //return var itteration setelah di push
+// }
+// console.log(ulul(3,7)); //mencetak function ulul dengan nilai variable yang telah ditentukan
+
+
+// Soal 3. Menghapus array terakhir bila string
+// var popLastString = (arr) => {
+//   if(typeof arr[arr.length - 2] === 'string'){
+//     arr.pop()  
+//   }
+//   return arr
+// }
+// console.log(popLastString([1,2,3,6,8,"huhu"]))
+// ----
+// tambahan jika ingin men-slice
+// var arr1 = [1,2,3]
+// var arr2 = arr1.slice(0,2)
+// console.log(arr2)
+// ----
+
+
+// Soal 4. Menghapus array awal bila string
+// var ShiftFirstString = (arr) => {
+//   if(typeof arr[0] === 'string'){
+//     arr.shift()  
+//   }
+//   return arr
+// }
+// console.log(ShiftFirstString(['fox',1,2,3]))
+
+
+// Soal 5. Menambahkan tulisan "FOX" jika index ke-0 adalah '0'
+//   var unshiftFoxOfZero = (arr) => {
+//   if(typeof arr[0] === 'number'){
+//     arr.unshift("FOX");  
+//   }
+//   return arr
+// }
+// console.log(unshiftFoxOfZero([0,1,2,3,6,8]))
+
+
+// Soal 6. Mengurutkan angka sejumlah 10 array dari angka dengan rentang 0-100
+// function SortNum(x) {
+//   var arr = []
+//   for (var e=1; e<=x; e++){
+//     var random = (Math.floor(Math.random() * 10) + 1);
+//     arr.push(random) ;
+//   }
+//   arr.sort((a,b) => a-b)
+//   return arr
+// }
+// console.log(SortNum(10))
+
+
+
+// tambahan
+// function SortNum(x) {
+//   var arr = []
+//   for (var e=1; e<=x; e++){
+//     var acak = Math.floor(Math.random() * 10) + 1;
+//     if (acak !== 8 && acak !== 1 ) {
+//       arr.push(acak)
+//       console.log(arr)
+//     } 
+//   }
+//   arr.sort((a,b) => a-b)
+//   return arr
+// }
+// console.log(SortNum(10))
+
+
+Soal No.7 Jika habis 3 Cetak "KAS", habis 6 cetak "KUS", habis 15 cetak "Kaskus"
+function kaskus(x){
+  var arr =[]
+  for (var i=1; i<=x; i++){
+    arr.push(i);
+    if (i%3 ==0){
+      arr.pop()
+      arr.push("KAS");
+    }
+    if (i%6 ==0){
+      arr.pop();
+      arr.push("KUS");
+    }
+    if (i%15 ==0){
+      arr.pop();
+      arr.push("KASKUS");
+    }
+  }
+  return arr
+}
+console.log(kaskus(30));
+
