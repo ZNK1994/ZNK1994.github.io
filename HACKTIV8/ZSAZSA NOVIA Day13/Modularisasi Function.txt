@@ -1,0 +1,112 @@
+function removeSpaces(text){ 
+  var a = text.split(/\s/);
+  var hasil = a.join('');
+  return hasil
+}
+
+function reverseText(text){
+  return text.split('').reverse().join('')
+//   var a = text.split("");
+//   var hasil = a.reverse();
+//   var hasil2 = hasil.join('');
+//   return hasil2
+}
+
+function updateVowels(text){
+  var arr = text.split('');
+  
+  for (i = 0; i< arr.length; i++){
+    if (arr[i] == 'a'){
+      arr[i]='b';
+    } 
+    if (arr[i] == 'i'){
+      arr[i]='j';  
+    }
+    if (arr[i] == 'u'){
+      arr[i]='v';
+    }
+    if (arr[i] == 'e'){
+      arr[i]='f';
+    }
+    if (arr[i] == 'o'){
+      arr[i]='p';
+    }
+  }
+  
+  return arr.join('')
+  
+}
+
+// var hasil = arr.join('')
+console.log(removeSpaces("Lorem ipsum dollor sit amet"));
+console.log(reverseText("Lorem ipsum dollor sit amet"));
+console.log(updateVowels("Lorem ipsum dollor sit amet"));
+// Biasa
+function removeSpaces(text){
+  var a = text.split(/\s/);
+  var hasil = a.join('');
+  return hasil
+}
+// Pake Forloop
+function removeloopSpaces(text){
+  var arr = text.split(' ');
+  var arrBaru = []
+  for (var a=0; a<arr.length; a++){
+    if(arr[a] !== " "){
+      arrBaru.push(arr);
+    }
+  }
+  return arr.join('')
+}
+
+// Biasa
+function reverseText(text){
+  return text.split('').reverse().join('') //dengan cara satu baris
+//   var a = text.split("");
+//   var hasil = a.reverse();
+//   var hasil2 = hasil.join('');
+//   return hasil2
+}
+// Pake Forloop
+function reverseloopText(text){
+  var arr = text.split('');
+  var arrBaru = []
+  for (var a=0; a<arr.length; a++){
+    arrBaru.unshift(arr[a])
+    }
+  
+  return arrBaru.join('')
+}
+// Biasa tapi udah pake Forloop
+function updateVowels(text){
+  var arr = text.split('');
+  
+  for (i = 0; i< arr.length; i++){
+    if (arr[i] == 'a'){
+      arr[i]='b';
+    } 
+    if (arr[i] == 'i'){
+      arr[i]='j';  
+    }
+    if (arr[i] == 'u'){
+      arr[i]='v';
+    }
+    if (arr[i] == 'e'){
+      arr[i]='f';
+    }
+    if (arr[i] == 'o'){
+      arr[i]='p';
+    }
+  }
+  
+  return arr.join('')
+  
+}
+console.log(removeSpaces("Lorem ipsum dollor sit amet"));
+console.log(reverseText("Lorem ipsum dollor sit amet"));
+console.log(updateVowels("Lorem ipsum dollor sit amet"));
+console.log(removeloopSpaces("Lorem ipsum dollor sit amet"));
+console.log(reverseloopText("Lorem ipsum dollor sit amet"));
+
+
+
