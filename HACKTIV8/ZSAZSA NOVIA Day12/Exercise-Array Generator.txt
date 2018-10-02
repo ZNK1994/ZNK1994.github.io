@@ -1,0 +1,11 @@
+var text = 'dimitri:dimitri@mail.com:male,icha:icha@mail.com:female,windi:windi@mail.com:female';
+
+var arr= text.split(',');
+var hasil= ([])
+for (var a=0; a<arr.length; a++){
+  arr.push();
+  var abb= arr[a].split(':');
+  hasil.push(abb)  ;
+}
+
+console.log(hasil);
