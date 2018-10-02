@@ -1,0 +1,16 @@
+
+function multidimensi(x,y){
+  //code didieu
+  var multi=[]
+  var z = 1
+  for (var a=0; a<x; a++){
+    multi.push([]);
+    for (var b=1; b<=y; b++){         
+      multi[a].push(z);
+      z++;
+    }
+  }
+  return multi
+}
+console.log(multidimensi(2,3));
+console.log(multidimensi(3,4));

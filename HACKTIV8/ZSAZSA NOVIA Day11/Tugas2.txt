@@ -1,0 +1,23 @@
+function multidimensi(x,y){
+  //code didieu
+  var multi=[]
+  var z = 1
+  for (var a=0; a<x; a++){
+    multi.push([]);
+    for (var b=1; b<=y; b++){         
+      multi[a].push(z);
+      z++;
+    }
+    if (y !==0){
+      multi[a].splice(0,1,"first");
+      multi[a].splice(y-1,1,"last");
+      console.log(y);
+    }
+  }
+  return multi
+}
+console.log(multidimensi(2,5));
+// console.log(multidimensi(3,4));
+// console.log(multidimensi(4,3));
+// console.log(multidimensi(6,2));
+// console.log(multidimensi(8,0));

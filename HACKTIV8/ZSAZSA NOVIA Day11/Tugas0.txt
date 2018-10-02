@@ -1,0 +1,9 @@
+
+// var multi=[]                      //membuat variable array kosong
+// for (var a=0; a<=5; a++){         //membuat perulangan untuk menghasilkan array kosong sebanyak 5 kali
+//   multi.push([]);                 //nge-push multi dengan isi kurung siku
+//   for (var b=0; b<3; b++){        //membuat perulangan untuk isi dari 
+//     multi[a].push(b);             //nge-push multi tiap array a dengan isi b
+//   }
+// }
+// console.log(multi);               //mencetak multi
