@@ -1,0 +1,41 @@
+Exercise-1
+-----------
+function perulangan(min, max){
+    for( var i = min; i<=max; i++ ) {
+      console.log(i);
+    }
+}
+
+perulangan(1, 55);
+----------
+----------
+Exercise-2
+-----------
+
+function perulangan(min, max){
+    for( var i = min; i<=max; i++ ) {
+      if(i%2==0){
+        console.log(i+' Genap');
+      }else{
+        console.log(i+' Ganjil');
+      }
+    }
+}
+
+perulangan(1, 55);
+
+-----------
+-----------
+Exercise-3
+-----------
+function pangkat(angka, expon){
+      var hasil=1  
+      while(expon>0){
+        hasil *= angka;
+        expon--;
+      }  
+  return hasil
+}
+
+console.log(pangkat(10, 2));
+console.log(pangkat(5, 3));
